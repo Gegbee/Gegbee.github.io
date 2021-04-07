@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GregB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles/specific.css">
+        <link rel = "stylesheet" href = "styles/general.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Shade&family=Chelsea+Market&family=Nova+Flat&family=Rock+Salt&family=Turret+Road:wght@200&family=Yatra+One&display=swap" rel="stylesheet">
+        <!-- 
+            font-family: 'Berkshire Swash', cursive;
+            font-family: 'Bungee Shade', cursive;
+            font-family: 'Chelsea Market', cursive;
+            font-family: 'Nova Flat', cursive;
+            font-family: 'Rock Salt', cursive;
+            font-family: 'Turret Road', cursive;
+            font-family: 'Yatra One', cursive;
+        -->
+    </head>
+    <body>
+
+        <div id = "robotics" class = "page">
+            <div class = "text_container">
+                <p class = "s">I am a programmer on my High School Robotics Team <a href="https://www.ljrobotics.org/">Team 2984</a></p>
+                <div class = "spacer"></div>
+                <p class = "s">Home Projects:</p>
+                <div class = "spacer"></div>
+                <p class = "xs">- Xbox controlled Robot Arm</p>
+                <p class = "xs">- Arduino based Nerf Gun</p>
+                <div class = "spacer"></div>
+                <p class = "s">School Projects:</p>
+                <div class = "spacer"></div>
+                <p class = "xs">- Programming in Python and Java for FRC and FTC</p>
+                <div class = "spacer"></div>
+                <img class = "icon" src = "imgs/009-brain.svg">
+                <img class = "icon" src = "imgs/008-chip.svg">
+                <img class = "icon" src = "imgs/007-industrial-robot-1.svg">
+                <img class = "icon" src = "imgs/010-chip-1.svg">
+            </div>
+            <div class = "exit" onclick = "focusMain()"></div>
+        </div>
+
+        <div id = "game" class = "page">
+            <div class = "text_container">
+                <p class = "s">I use game development as a creative output for my crazy ideas</p>
+                <div class = "spacer"></div>
+                <p class = "xs">Here is where I post my games: <a href = "https://geglo.itch.io/">Itch.io</a></p>
+                <div class = "spacer"></div>
+                <p class = "xs">I create my games using Godot, Blender, and FLStudio</p>
+                <div class = "spacer"></div>
+                <p class = "xs">Occasionally, I use Javascript to make games. Here is my most proud one: 
+                    <a href = "https://yello12.github.io/TerminalTrading/">Terminal Trading Co.</a>
+                </p>
+                <img class = "icon" src = "imgs/003-joystick.svg">
+                <img class = "icon" src = "imgs/004-game-console-1.svg">
+                <img class = "icon" src = "imgs/005-game-console-2.svg">
+                <img class = "icon" src = "imgs/001-videogames.svg">
+            </div>
+            <div class = "exit" onclick = "focusMain()"></div>
+        </div>
+
+        <div id = "about" class = "page">
+            <div class = "text_container">
+                <p class = "s">Hi! I'm Greg Baldwin and I currently attend La Jolla High School.</p>
+                <div class = "spacer"></div>
+                <p class = "xs">I enjoy doing various digital arts (3D Modelling, Game Development, Graphic Design) and especially programming.</p>
+                <div class = "spacer"></div>
+                <p class = "xs">I am inspired by other digital artists including 
+                <a href = "https://twitter.com/_itsjackielee">Jackie Lee</a>, 
+                <a href = "https://twitter.com/Franrekk">Franciszek Jan Nowotniak</a>, and 
+                <a href = "https://twitter.com/OskSta">Oskar Stålberg</a>.</p>
+            </div>
+            <div class = "exit" onclick = "focusMain()"></div>
+        </div>
+
+
+
+        <div class="cube_container">
+            <div class = "cube" id = "cube">
+                <div class="face infront top" onclick = "focusAbout()">
+                    <div style = "margin-left: 8px;">
+                        <p class = "l" style = "font-family: 'Nova Flat', cursive;text-align: left;color: rgb(255, 255, 255);">Greg<br>Baldwin</p>
+                        <p class = "xs" style = "font-family: 'Nova Flat', cursive;text-align: left;color: rgb(255, 255, 255);">About Me</p>
+                    </div>
+                </div>
+                <div class="face behind bottom"></div>
+                <div class="face infront left" onclick = "focusGame()"><p class = "m" 
+                    style="font-family: 'Nova Flat', cursive;color: rgb(255, 255, 255);">Game Dev</p></div>
+                <div class="face behind right"></div>
+                <div class="face infront front" onclick = "focusRobotics()"><p class = "m" 
+                    style="font-family: 'Nova Flat', cursive;color: rgb(255, 255, 255);">Robotics</p></div>
+                <div class="face behind back"></div>
+            </div>
+        </div>
+
+        <div class = "item_container" id = "socials">
+            <button onclick = "link('https://github.com/Yello12')">
+                <img class = "icon" src = "imgs/github.svg">
+            </button>
+            <button onclick = "link('https://www.instagram.com/greg.o.rio/')">
+                <img class = "icon" src = "imgs/instagram.svg">
+            </button>
+            <button onclick = "link('https://mail.google.com/')">
+                <img class = "icon" src = "imgs/google-plus.svg">
+            </button>
+        </div>
+
+
+
+        <script src = "apps/app.js"></script>
+
+    </body>
+</html>

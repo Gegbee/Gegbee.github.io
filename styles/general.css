@@ -1,0 +1,64 @@
+html {
+    font-family: 'Chelsea Market', cursive;
+    background-color:rgb(224, 224, 224);
+    height:100%;
+    width:100%;
+}
+body {
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+p {
+    padding:0;
+    margin:0;
+    display:block;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(103, 112, 138);
+    opacity:0.7;
+}
+img {
+    width:100%;
+    border-radius: 8px 8px 0 0;
+    cursor:pointer;
+}
+button {
+    border:none;
+    background:none;
+    margin:none;
+    padding:none;
+    outline:none;
+}
+.text_container {
+    width: 30%;
+    padding: 10px;
+    text-overflow:clip;
+    word-wrap:normal;
+}
+.spacer {
+    padding:10px;
+}
+.background {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.xs {font-size:14px;display:block;}
+.s {font-size:18px;}
+.m {font-size:26px;}
+.l {font-size:38px;}
+.xl {font-size:50px;}
+.xxl {font-size:80px;}
+a {
+    font-family: 'Chelsea Market', cursive;
+    opacity:1;
+    font-weight:lighter;  
+    color: rgb(67, 105, 155);
+    cursor:pointer;
+    text-decoration:none;
+}
+a:link {color: rgb(67, 105, 155);}
+a:visited {color: rgb(67, 105, 155);}
+a:hover {color: rgb(41, 66, 100);}
+a:active {color: rgb(67, 105, 155);}
